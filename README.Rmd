@@ -42,4 +42,10 @@ tips <- read_sheet(url, sheet = "tips", skip = disclaimer)
 tips
 ```
 
+```{r}
+tips %>% 
+  slice(1) %>% 
+  pull(tip) %>% 
+  cat()
+```
 

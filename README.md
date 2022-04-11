@@ -65,3 +65,13 @@ tips
 #> 4 2022-04-14 00:00:00 mauro   "You can use all of the most popular R packages f…
 #> 5 2022-04-15 00:00:00 mauro   "To work with Git and GitHub you don’t need a ter…
 ```
+
+``` r
+tips %>% 
+  slice(1) %>% 
+  pull(tip) %>% 
+  cat()
+#> To get 1:1 help on any coding challenge you have, schedule a coding-helpdesk with @Jackson, @Monika, @Alex Axthelm, @CJ, or me. 
+#> 
+#> Learn more about the coding-helpdesk at http://bit.ly/2dii-coding-helpdesk
+```
