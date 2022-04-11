@@ -18,3 +18,28 @@ knitr::opts_chunk$set(
 
 The goal of daily-dev-tips is to support the Slack channel
 #daily-dev-tips.
+
+```{r}
+library(tidyverse, warn.conflicts = FALSE)
+library(googlesheets4)
+```
+
+```{r}
+url <- "https://docs.google.com/spreadsheets/d/1sFF28BcWonrnDriiV_42uSjiYktxaTMFHsKCjDL1OcQ/edit#gid=0"
+```
+
+```{r}
+curators <- read_sheet(url, sheet = "curators") %>% 
+  filter(!is.na(curator))
+
+curators
+```
+
+```{r}
+disclaimer <- 2
+tips <- read_sheet(url, sheet = "tips", skip = disclaimer)
+
+tips
+```
+
+
