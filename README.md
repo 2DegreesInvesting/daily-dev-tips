@@ -46,7 +46,7 @@ curators
 #> 1 2022-04-11 00:00:00 Mauro   Jackson    
 #> 2 2022-04-18 00:00:00 Jackson Linda      
 #> 3 2022-04-25 00:00:00 Linda   Mirja      
-#> 4 2022-05-02 00:00:00 Mirja   <NA>
+#> 4 2022-05-02 00:00:00 Mirja   Mauro
 ```
 
 ``` r
